@@ -29,6 +29,12 @@ def imprime_lista(cabecalho, lista):
         lista_a_imprimir.extend([[id] + list(d.values()) for id, d in enumerate(lista)])
 
         print(tabulate(lista_a_imprimir, headers="firstrow", tablefmt='psql'))
+    
+    def pause():
+    """Faz uma pausa no programa e espera que o utilizador pressione ENTER"""
+
+    input("Pressione ENTER para continuar...")
+
 # TODO: Copie para aqui o código de cada uma das funções nos
 # ficheiros com o nome io_terminal*.py e faça um commit de cada vez
 # Quando este ficheiro estiver completo com todas as suas funções,
