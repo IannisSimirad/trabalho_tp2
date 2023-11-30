@@ -14,6 +14,13 @@ def cria_novo_cliente():
     pass
 
 
+def imprime_lista_de_clientes(lista_de_clientes):
+    """TODO: documentação"""
+
+    #TODO: Implementar esta função
+    # ...
+
+
 
 # TODO: Copie para aqui o código de cada uma das funções nos
 # ficheiros com o nome clientes-*.py e faça um commit de cada vez
