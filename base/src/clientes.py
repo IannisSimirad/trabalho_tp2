@@ -1,6 +1,19 @@
 from io_terminal import imprime_lista
 
-nome_ficheiro_lista_de_clientes = "lista_de_clientes.p
+nome_ficheiro_lista_de_clientes = "lista_de_clientes.py"
+
+
+def cria_novo_cliente():
+    """Pedir os dados de um novo cliente
+
+    :return: dicionario com o novo cliente, {"nome": <<nome>>, "nif": <<nif>>, ...}
+    """
+    # TODO: pedir os dados do cliente e não esquecer de os devolver
+    # ...
+
+    pass
+
+
 
 # TODO: Copie para aqui o código de cada uma das funções nos
 # ficheiros com o nome clientes-*.py e faça um commit de cada vez
