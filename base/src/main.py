@@ -3,15 +3,15 @@ from faturas import cria_nova_fatura, imprime_lista_de_faturas
 from io_ficheiros import (carrega_as_listas_dos_ficheiros,
                           guarda_as_listas_em_ficheiros)
 from io_terminal import pause
-from veiculos import cria_novo_veiculo, imprime_lista_de_veiculos
-
-
-if __name__ == "__main__":
-    menu()
+from veiculos import cria_novo_veiculo
 
 def menu():
-    """Menu principal da aplicação"""
+    """
+    Função principal que exibe um menu interativo para gerenciar dados da oficina.
 
+    Este menu permite ao usuário realizar operações como adicionar novos clientes, veículos,
+    faturas, listar clientes, veículos, faturas, salvar e carregar dados em arquivos, e sair do programa.
+    """
     lista_de_veiculos = []
     lista_de_clientes = []
     lista_de_faturas = []
@@ -55,7 +55,7 @@ def menu():
 
         elif op == "nf":
             if len(lista_de_clientes) == 0 or len(lista_de_veiculos) == 0:
-                print("Não há clientes ou veiculos registados...")
+                print("Não há clientes ou veículos registrados...")
                 continue
 
             nova_fatura = cria_nova_fatura(lista_de_clientes, lista_de_veiculos)
@@ -72,3 +72,6 @@ def menu():
         elif op == "lf":
             imprime_lista_de_faturas(lista_de_faturas)
             pause()
+
+if __name__ == "__main__":
+    menu()
